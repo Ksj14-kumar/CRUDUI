@@ -1,0 +1,31 @@
+    <%- include("../partials/header.ejs")%>
+    
+    
+    <div class="col-md-6">
+      <h1 class="text-center container bg-warning">Fill this Form</h1>
+      <form action="/update" method="POST">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text"
+            class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Name">
+        </div>
+       
+        <div class="form-group">
+           <label for="">Email</label>
+           <input type="email"
+             class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Email">
+         </div>
+       
+         
+         <div class="form-group">
+           <label for="">age</label>
+           <input type="number"
+             class="form-control " name="age" id="age" min="10" max="111" aria-describedby="helpId" placeholder="Age">
+         </div>
+       
+         <button type="submit" class="btn btn-primary mt-3"><%= update=="update"?"update":"submit" %> </button>
+       
+       
+       </form>
+
+    </div>
